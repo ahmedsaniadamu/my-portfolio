@@ -1,0 +1,26 @@
+ [
+    {
+        "name":"ahmed sani",
+        "id" : 1 ,
+        "course" : "web development",
+        "resolved" : false
+    } ,
+    {
+        "name":" sani",
+        "id" : 2 ,
+        "course" : "web development",
+        "resolved" : false
+    },
+    {
+        "name":"ahmed",
+        "id" : 3 ,
+        "course" : "web development",
+        "resolved" : false
+    },
+    {
+        "name":"mahammad",
+        "id" : 4 ,
+        "course" : "ux designer",
+        "resolved" : false
+    }
+ ]
