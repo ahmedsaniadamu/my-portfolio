@@ -66,7 +66,7 @@ const ContactForm = () => {
  
     return (
         <div className='contact-form d-block mx-auto'>                     
-            <h1 className='text-center mb-0 header pt-2'> Get In Touch  </h1>
+            <h1 className='text-center mb-0 header pt-4'> Get In Touch  </h1>
             <p className='p-0 m-0 sub-header text-center mt-1 px-2'>  
                Feel free to fill the required fields. I will reply as soon as possible.
             </p>

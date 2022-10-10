@@ -24,7 +24,7 @@ const MobileNavbar = ({className}) => {
                          className='ms-1' 
                          onClick= { () => {                           
                              closeSidebarFunc() ;
-                             scrollTo(elementPostion('#root'))
+                             scrollTo(elementPostion('#root') - 20)
                            } 
                          }
                        > 
@@ -34,7 +34,7 @@ const MobileNavbar = ({className}) => {
                          className='ms-1' 
                          onClick= { () => {                           
                              closeSidebarFunc() ;
-                             scrollTo(elementPostion('.about'))
+                             scrollTo(elementPostion('.about') - 20)
                            } 
                          }
                        > 
@@ -44,7 +44,7 @@ const MobileNavbar = ({className}) => {
                          className='ms-1' 
                          onClick= { () => {                           
                              closeSidebarFunc() ;
-                             scrollTo(elementPostion('.projects'))
+                             scrollTo(elementPostion('.projects') - 20 )
                            } 
                          }
                        > 
@@ -54,7 +54,7 @@ const MobileNavbar = ({className}) => {
                          className='ms-1' 
                          onClick= { () => {                           
                              closeSidebarFunc() ;
-                             scrollTo(elementPostion('.contact'))
+                             scrollTo(elementPostion('.contact') - 20 )
                            } 
                          }
                        > 
@@ -64,7 +64,7 @@ const MobileNavbar = ({className}) => {
                          className='ms-1' 
                          onClick= { () => {                           
                              closeSidebarFunc() ;
-                             scrollTo(elementPostion('.services'))
+                             scrollTo(elementPostion('.services') - 20 )
                            } 
                          }
                        > 

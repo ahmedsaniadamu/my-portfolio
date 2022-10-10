@@ -2,8 +2,8 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div className='mt-2 services'>
-         <h5 className="header text-center">  Services  </h5>
+    <div className='mt-3 services'>
+         <h5 className="header text-center"> <span className='text-info'> My </span>  Services  </h5>
          <div className="row w-100 mx-auto px-1">
              <div className="col-12 col-sm-6 col-md-4 pt-2 ">
                    <div className="wrapper d-block mx-auto border pt-2">

@@ -4,7 +4,7 @@ import languages from './languages'
 const Skills = () => {
 
   return (
-    <div className='mt-2 skills'>
+    <div className='mt-4 skills'>
        <h5 className='text-center '> <span className='text-info'> My </span> Skills </h5>
        <div className='wrapper mx-auto d-flex px-1 justify-content-center flex-wrap'> 
            {

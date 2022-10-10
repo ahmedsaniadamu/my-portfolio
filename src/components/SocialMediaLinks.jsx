@@ -25,6 +25,11 @@ const SocialMediaLinks = ({ flexDirection , className }) => {
          data-bs-toggle='tooltip' title='github'
          target={'_blank'}
          ></a>        
+         <a href="https://t.me/AhmedSaniAdam" 
+         className="fab fa-telegram text-center m-0"
+         data-bs-toggle='tooltip' title='github'
+         target={'_blank'}
+         ></a>  
     </div>
   )
 }

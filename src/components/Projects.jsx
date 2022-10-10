@@ -12,7 +12,7 @@ const Projects = () => {
             {
                 projects.map( (project , id ) => {
                     return(
-                        <div className="col-12 col-sm-6 col-md-4  p-0 mt-2 " key={id}>
+                        <div className="col-12 col-sm-6 col-md-4  p-0 mt-3 mt-sm-2 pb-2" key={id}>
                              <div className='item d-block mx-auto p-0'>
                                  <img 
                                        src={ project.image } 
@@ -25,10 +25,10 @@ const Projects = () => {
                                   <p className='p-0 ps-1 m-0'>
                                        { project.description } 
                                   </p>
-                                  <div className='pb-1 ps-1'>
+                                  <div className='pb-2 ps-1 mt-1'>
                                       <a 
                                           href={ project.liveSite } 
-                                          className='btn btn-outline-info px-0 py-md-1'
+                                          className='btn btn-outline-dark px-0 py-md-1'
                                           target={'_blank'}
                                         >
                                          <i className="fas fa-eye"></i>  Live Site

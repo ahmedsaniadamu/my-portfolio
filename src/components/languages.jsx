@@ -74,9 +74,19 @@ const languages = [
         language : '' ,
         image : 'assets/IMG_20220219_141057.png' ,
         description : 'A relational database management system.' 
-
     },
-    
+    {
+        id: 12,
+        language : '' ,
+        image : 'assets/laravel.png' ,
+        description : 'A php framework for web artisans' 
+    },
+    {
+        id: 13,
+        language : '' ,
+        image : 'assets/tailwindcss.png' ,
+        description : 'A css framework for creating modern website layouts' 
+    },    
 ]
 
 export default languages

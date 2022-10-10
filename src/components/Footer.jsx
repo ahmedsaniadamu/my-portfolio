@@ -5,8 +5,14 @@ const Footer = () => {
     <footer className='footer  mb-0 text-white'>
         <h5 className='mb-0 py-1 ps-1'> Contact Support : </h5>
          <ul className='p-0 m-0 ps-2 d-flex'>             
-             <li className='ms-2'> <span className="fas fa-phone"></span> +2348125391892 </li>
-             <li className='ms-2'> <span className="fas fa-phone"></span> +2349028270998 </li>             
+             <li className='ms-2'> 
+                  <a href="tel:+2348125391892">
+                      <span className="fas fa-phone"></span> +2348125391892 
+                  </a> 
+              </li>
+             <li className='ms-2'> 
+                 <a href="tel:+2347067905912"> <span className="fas fa-phone"></span> +2347067905912  </a>
+              </li>             
              <li className='ms-2'> 
                   <span className="fas fa-envelope"></span> 
                    <a href="mailto:saniahmed813@gmail.com" style={{paddingLeft:6}}

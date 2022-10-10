@@ -7,7 +7,7 @@ const Chat = () => {
 
   const displayChat  = () => {
       let aboutSection = document.querySelector('.about')
-      if(window.pageYOffset  >= aboutSection.offsetTop - 300 ){
+      if(window.pageYOffset  >= aboutSection.offsetTop - 200 ){
              setShowChat(true)
       }
   }

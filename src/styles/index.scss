@@ -19,9 +19,9 @@ html{
 } 
  
 nav.navbar-wrapper{
+    background: #f3f6ff;  
     .mobile-navbar{
-        height: 60px;
-        box-shadow: 0 0  8px rgba(0,0,0,0.3);
+        height: 60px;        
         .logo{
             height: 50px;
             width: 50px;
@@ -48,8 +48,7 @@ nav.navbar-wrapper{
         }
     }
     .navbar{
-        height: 60px;
-        box-shadow: 0 0  8px rgba(0,0,0,0.3);
+        height: 60px;         
         .logo{
             height: 50px;
             width: 50px;
@@ -57,7 +56,9 @@ nav.navbar-wrapper{
       .navigation-links{
           ul{
             list-style: none;
-            font-size: 0.55rem;  
+            font-size: 0.53rem;  
+            font-weight: 600;
+            color: rgb(43, 42, 42);
             li{
                 transition: .2s;
                 &:hover{  cursor: pointer; color: rgb(20, 0, 197); }
@@ -93,10 +94,11 @@ nav.navbar-wrapper{
                 width: 40px;
                 margin-left: 7px !important;
             }
-            a.fa-facebook{ background: rgb(47, 2, 245); }
+            a.fa-facebook{ background: rgb(68, 28, 247); }
             a.fa-whatsapp{ background: rgb(0, 207, 45);  }
             a.fa-linkedin{ background: rgb(19, 165, 250);  }
             a.fa-github{ background: rgb(41, 41, 41);  }
+            a.fa-telegram{  background: rgb(19, 135, 200);  }
         }
     }
 }
@@ -115,60 +117,54 @@ nav.navbar-wrapper{
        color: #f3f6ff;
        width: 100%;
    }
-   a.fa-facebook{ background: rgb(47, 2, 245); }
+   a.fa-facebook{ background: rgb(47, 2, 200); }
    a.fa-whatsapp{ background: rgb(0, 207, 45);  }
-   a.fa-linkedin{ background: rgb(19, 165, 250);  }
+   a.fa-linkedin{ background: rgb(19, 165, 230);  }
    a.fa-github{ background: rgb(41, 41, 41);  }
+   a.fa-telegram{  background: rgb(19, 135, 200);  }
   
 }
 
 header{
-    margin-top: -80px;
-    & > * { overflow: hidden; }
-    @include mobile-view(500px){   
-        flex-direction: column !important;   
-        margin-top: -60px;   
-    }
-    &> div{
-        width: 50%;
-        overflow-x: hidden; 
-        @include mobile-view(500px){  width: 100% !important;}
-    }
-    .m-header{
-        transform: translateY(-50px);
-        background: rgba(243, 246, 255,0.9);
-    }
-    .header-img{       
-        filter:  saturate(1.3) contrast(120%);
-        transform: rotateZ(-24deg);
-        height: 370px;
-        padding-top: 7px;
-        width: 320px;        
-        object-fit: cover;
-        @include mobile-view(500px){ width: 310px;  height: 350px; transform: rotateZ(-17deg);}      
-    }
+     background-image: url(../../public/assets/desk-593327_1920.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     height: 700px;
+     @include mobile-view(){  height: 480px;   }
+    & > * { overflow: hidden; }           
     .header-text{
+         color: #ffffff;
          h2{
-               font-size: 1.5rem;
-               @include mobile-view(){   font-size: 0.8rem; }
+               font-size: 2rem;
+               font-weight: 900;
+               @include mobile-view(){   font-size: 1.5rem; font-weight: 700; }
             }
          h6{ 
-              font-size: 0.8rem; 
-              @include mobile-view(){   font-size: 0.68rem; }
+              font-size: 0.95rem; 
+              font-weight: 700;
+              @include mobile-view(){   font-size: 0.94rem; font-weight: 600; }
            }
          p{  
-             font-size: 0.7rem; 
-             @include mobile-view(){   font-size: 0.63rem; }}
+             font-size: 0.69rem; 
+             font-weight:500;
+             width: 70%;
+             @include mobile-view(){  
+                 font-size: 0.72rem; 
+                 width: 98%;
+            }}
          a{  
-             font-size: 0.68rem;
+             font-size: 0.65rem;
              box-shadow: 0 0 0 transparent;
-             @include mobile-view(){   font-size: 0.6rem; }
+             border-radius: 30px;
+             border: none;             
+             @include mobile-view(){   font-size: 0.68rem; }
              &:focus,&:active,&:hover{
                  box-shadow: 0 0 0 transparent !important;
              }            
           }
           & > *{
-               animation: push-up 1s ease-in-out 0.5s;
+               animation: push-up 1s ease-in-out 1.1s;
           }
           @keyframes push-up{
               from{ transform: translateY(60px); }
@@ -180,15 +176,24 @@ header{
     font-size: 0.5rem;
     background: #2a2c2f;
     color: #f3f6ff;
-    @include mobile-view(500px){  margin-top: -30px; }
+    img{
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        @include mobile-view(500px){
+            display: block;
+            margin: auto;
+            height: 150px;
+             width: 150px;
+        }
+    }
+
     h5{
         font-size: 0.8rem;
     }
     div{
-        font-size: 0.6rem;
-        width: 70%;
-        @include tablet-view(){  width: 80%; }
-        @include mobile-view(500px){  width: 96%; }
+        font-size: 0.6rem;         
         i{
             font-size: 0.5rem;
         }
@@ -203,6 +208,7 @@ header{
           font-size: 0.9rem; 
           font-weight: 500;          
         }
+
     div.row{
         &>div{
             padding: 0 !important;
@@ -285,11 +291,11 @@ header{
                 font-size: 0.45rem;
                 opacity: 0.9;
                 @include mobile-view(600px){
-                    font-size: 0.5rem;
+                    font-size: 0.58rem;
                }
             }
             a.btn{
-                font-size: 0.48rem;
+                font-size: 0.45rem;
                 width: 45%;
                 padding-top: 5px;
                 padding-bottom: 5px;
@@ -333,6 +339,7 @@ header{
         button{
             font-size: 0.6rem;
             width: 300px;
+            border-radius: 30px;
             &:active,&:focus{
                 box-shadow: 0 0 0 transparent !important;
             }
@@ -357,6 +364,11 @@ footer{
             letter-spacing: 0.5px;
             list-style: none;
             opacity: 0.8; 
+            a{
+                color: rgb(255,255,255);
+                text-decoration: none;
+                &:hover{  color: rgb(255,255,255);  }
+            }
         }
       }
       p{
