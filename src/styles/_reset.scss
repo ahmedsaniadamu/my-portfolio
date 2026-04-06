@@ -1,28 +1,35 @@
 /* reset default browser styles */
 
 // responsive
-@import 'responsive' ;
+@import 'responsive';
 
 
-html{   
-}
-*{
+html {}
+
+* {
     margin: {
-        top: 0; left: 0; right: 0; bottom: 0
-    } ;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0
+    }
+
+    ;
 
     padding: {
-    top: 0; left: 0; right: 0; bottom: 0
-    };
-    box-sizing: border-box;    
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0
+    }
+
+    ;
+    box-sizing: border-box;
     text-decoration: none;
 }
-body{
-    font-family: sans-serif;
-    @include mobile-view(){
+
+body {
+    @include mobile-view() {
         font-size: 0.8rem;
     }
 }
- 
-
- 

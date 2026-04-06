@@ -13,24 +13,20 @@ import Footer from './components/Footer';
 import Chat from './components/Chat';
 
 function App() {
-  
+
   return (
     <div className='app'>
-        <nav className='navbar-wrapper sticky-top'>
-             <MobileNavbar className={'d-md-none mobile-navbar'} />
-             <Navbar className={'d-none d-md-block navbar'} />
-        </nav>    
-        <div className='desktop-social-media-links'> 
-           <SocialMediaLinks flexDirection={'flex-column'} />
-         </div>         
-        <Chat />
-        <Header />   
-        <About />
-        <Services />  
-        <Skills />
-        <Projects  />   
-        <Contact />  
-        <Footer />
+      <div className='desktop-social-media-links'>
+        <SocialMediaLinks flexDirection={'flex-column'} />
+      </div>
+      <Chat />
+      <Header />
+      <About />
+      <Services />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }

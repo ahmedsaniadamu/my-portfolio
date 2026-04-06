@@ -1,47 +1,103 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import languages from './languages'
 
-const Skills = () => {
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.1, delayChildren: 0.2 }
+  }
+}
 
+const skillVariants = {
+  hidden: { opacity: 0, scale: 0.8, y: 20 },
+  visible: {
+    opacity: 1, scale: 1, y: 0,
+    transition: { type: 'spring', stiffness: 150, damping: 15 }
+  },
+  hover: {
+    scale: 1.1,
+    boxShadow: "0px 10px 20px rgba(249, 115, 22, 0.15)",
+    transition: { type: 'spring', stiffness: 300, damping: 20 }
+  }
+}
+
+const itemVariants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+}
+
+const Skills = () => {
   return (
-    <div className='mt-4 skills'>
-       <h5 className='text-center '> <span className='text-info'> My </span> Skills </h5>
-       <div className='wrapper mx-auto d-flex px-1 justify-content-center flex-wrap'> 
-           {
-               languages.map(  skills => {
-                    if(skills.language){
-                        return ( 
-                             <div key={skills.id} className='mx-1 mt-1 px-1 lng'
-                                  data-bs-toggle='tooltip' title={ skills.description}
-                             >
-                                  <img 
-                                     src={ skills.image }
-                                      alt={ skills.language }
-                                      className='icon-image'
-                                   />
-                                   <span> { skills.language } </span>
-                              </div>
-                          )
-                    }
-                    else {
-                        return (
-                            <div className='lng mx-1 px-1 mt-1'
-                                 data-bs-toggle='tooltip' title={ skills.description}
-                            >
-                                 <img  key = { skills.id }
-                                        src={ skills.image }
-                                        alt='skills'
-                                        className='full-image'
-                                  />
-                             </div>
-                        )
-                    }
-               } )
-           }
-       </div>
+    <div className='py-4 bg-dark skills overflow-hidden' id="skills">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={containerVariants}
+        className="container px-2"
+      >
+        <motion.div variants={itemVariants} className="text-center mb-4">
+          <h5 className="header fw-bold mb-2 text-white" style={{ fontSize: '1rem' }}>
+            <span className='text-info'>My</span> Skills
+          </h5>
+          <div className="mx-auto bg-info" style={{ width: '40px', height: '2px', borderRadius: '2px' }}></div>
+        </motion.div>
+
+        <div className='d-flex justify-content-center flex-wrap gap-3'>
+          {languages.map((skill, index) => (
+            <motion.div
+              key={skill.id}
+              variants={skillVariants}
+              whileHover="hover"
+              style={{ width: '80px', height: '80px', perspective: 1000 }}
+              data-bs-toggle='tooltip'
+              title={skill.description}
+            >
+              <motion.div
+                className='bg-white rounded-3 p-2 d-flex flex-column align-items-center justify-content-center w-100 h-100'
+                style={{ cursor: 'pointer', transformStyle: 'preserve-3d', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}
+                animate={{
+                  rotateY: [0, 180, 360],
+                  y: [0, -6, 0]
+                }}
+                transition={{
+                  rotateY: {
+                    duration: 2.5,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    repeatDelay: 2 + (index % 3),
+                    delay: index * 0.15
+                  },
+                  y: {
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: index * 0.1
+                  }
+                }}
+              >
+                <img
+                  src={skill.image}
+                  alt={skill.language || 'skill icon'}
+                  className={skill.language ? 'icon-image mb-1' : 'full-image'}
+                  style={{
+                    width: skill.language ? '35px' : '65px',
+                    height: skill.language ? '35px' : '30px',
+                    objectFit: 'contain'
+                  }}
+                />
+                {skill.language && (
+                  <span className="fw-bold text-dark text-center mt-1" style={{ fontSize: '0.42rem' }}> {skill.language} </span>
+                )}
+              </motion.div>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
     </div>
   )
-
 }
 
 export default Skills
