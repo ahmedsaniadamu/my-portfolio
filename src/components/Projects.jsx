@@ -40,9 +40,10 @@ const Projects = () => {
         className="container px-2"
       >
         <motion.div variants={itemVariants} className="text-center mb-4">
-          <h5 className="header fw-bold mb-2 text-white" style={{ fontSize: '1rem' }}>
-            <span className='text-info'>My</span> Projects
+          <h5 className="header fw-bold mb-1 text-white" style={{ fontSize: '1rem' }}>
+            <span className='text-info'>Explore</span> Some Of My Recent Projects 
           </h5>
+          <p className="text-center text-muted-small" style={{ fontSize: '0.56rem', color: 'rgba(255,255,255,0.6)' }}>Here are a some projects I've worked on recently for various clients, showcasing my skills and experience.</p>
           <div className="mx-auto bg-info" style={{ width: '40px', height: '2px', borderRadius: '2px' }}></div>
         </motion.div>
 

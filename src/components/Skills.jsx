@@ -30,7 +30,7 @@ const itemVariants = {
 
 const Skills = () => {
   return (
-    <div className='py-4 bg-dark skills overflow-hidden' id="skills">
+    <div className='py-4 mt-3 bg-dark skills overflow-hidden' id="skills">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -39,10 +39,14 @@ const Skills = () => {
         className="container px-2"
       >
         <motion.div variants={itemVariants} className="text-center mb-4">
-          <h5 className="header fw-bold mb-2 text-white" style={{ fontSize: '1rem' }}>
-            <span className='text-info'>My</span> Skills
+          <h5 className="header fw-bold mb-1 text-white" style={{ fontSize: '1rem' }}>
+            <span className='text-info'>My</span> Technical Skills
           </h5>
-          <div className="mx-auto bg-info" style={{ width: '40px', height: '2px', borderRadius: '2px' }}></div>
+          <p className="text-center text-muted-small" style={{ fontSize: '0.55rem', color: 'rgba(255,255,255,0.6)' }}>
+            The Technical skills, languages, and frameworks I’ve worked with, reflecting my versatility and experience.
+          </p>
+
+           <div className="mx-auto bg-info" style={{ width: '40px', height: '2px', borderRadius: '2px' }}></div>
         </motion.div>
 
         <div className='d-flex justify-content-center flex-wrap gap-3'>
@@ -59,17 +63,9 @@ const Skills = () => {
                 className='bg-white rounded-3 p-2 d-flex flex-column align-items-center justify-content-center w-100 h-100'
                 style={{ cursor: 'pointer', transformStyle: 'preserve-3d', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}
                 animate={{
-                  rotateY: [0, 180, 360],
                   y: [0, -6, 0]
                 }}
                 transition={{
-                  rotateY: {
-                    duration: 2.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    repeatDelay: 2 + (index % 3),
-                    delay: index * 0.15
-                  },
                   y: {
                     duration: 3,
                     repeat: Infinity,

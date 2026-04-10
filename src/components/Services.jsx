@@ -30,21 +30,37 @@ const itemVariants = {
 
 const services = [
   {
-    icon: 'fas fa-code',
-    title: 'Web Development',
-    desc: 'Implementation of PSD or Figma design into a live website with cross browser compatibility and modern standards.'
+    icon: 'fas fa-laptop-code',
+    title: 'Full Stack Development',
+    desc: 'Building scalable web applications from front-end to back-end, leveraging modern frameworks and cloud technologies.'
+  },
+  {
+    icon: 'fas fa-brain',
+    title: 'AI-Powered Solutions',
+    desc: 'Integrating artificial intelligence into workflows to automate tasks, enhance user experiences, and deliver smarter applications.'
+  },
+  {
+    icon: 'fas fa-project-diagram',
+    title: 'System Design',
+    desc: 'Architecting robust, maintainable, and scalable systems with a focus on performance, reliability, and long-term growth.'
   },
   {
     icon: 'fas fa-mobile-alt',
-    title: 'Responsive Design',
-    desc: 'Design that aims to make web pages render flawlessly on a variety of devices: mobile, tablet and desktop.'
+    title: 'Responsive & Adaptive Design',
+    desc: 'Crafting interfaces that seamlessly adapt across devices, ensuring accessibility and performance on mobile, tablet, and desktop.'
+  },
+  {
+    icon: 'fas fa-sync-alt',
+    title: 'Workflow Optimization',
+    desc: 'Using AI-driven tools to streamline development processes, improve efficiency, and accelerate delivery timelines.'
   },
   {
     icon: 'fas fa-paint-brush',
-    title: 'Template Editing',
-    desc: 'Editing, optimizing and redefining an already created website or web application to match your business goals.'
+    title: 'UI/UX Enhancement',
+    desc: 'Designing and refining user interfaces with a focus on usability, aesthetics, and business goals.'
   }
 ]
+
 
 const Services = () => {
   return (
@@ -58,7 +74,7 @@ const Services = () => {
       >
         <motion.div variants={itemVariants} className="text-center mb-3 mt-3">
           <h5 className="header fw-bold mb-2 text-white" style={{ fontSize: '1rem' }}>
-            <span className='text-info'>My</span> Services
+            <span className='text-info'>Services</span> & Values That Drive Me
           </h5>
           <div className="mx-auto bg-info" style={{ width: '40px', height: '2px', borderRadius: '2px' }}></div>
         </motion.div>
@@ -77,7 +93,7 @@ const Services = () => {
                     <span className={service.icon}></span>
                   </div>
                   <h4 className='fw-bold mb-2 text-white' style={{ fontSize: '0.65rem' }}>{service.title}</h4>
-                  <p className='text-white mb-0' style={{ fontSize: '0.5rem', lineHeight: '1.5' }}>
+                  <p className='text-muted-small mb-0' style={{ fontSize: '0.5rem', lineHeight: '1.5' }}>
                     {service.desc}
                   </p>
                 </div>

@@ -117,14 +117,15 @@ const Header = () => {
 
           {/* Sub-heading */}
           <motion.h6 className='mt-0 p-0 text-center' variants={itemVariants}>
-            Software Developer | Engineer
+            Software Engineer | AI-Driven Developer
           </motion.h6>
 
           {/* Description */}
-          <motion.p className='m-0 p-0 text-center mx-auto' variants={itemVariants}>
-            A highly skilled and motivated web developer who delivers best quality and
-            scalable software for your business.
+          <motion.p style={{fontSize: '0.6rem'}} className='m-0 p-0 text-center mx-auto' variants={itemVariants}>
+            Innovative and results-oriented developer specializing in building intelligent,
+            scalable, and future-ready software solutions that empower businesses in the digital age.
           </motion.p>
+
 
           {/* CTA Button */}
           <motion.div
@@ -133,11 +134,12 @@ const Header = () => {
           >
             <motion.a
               href="assets/ahmed-resume.pdf"
-              className="btn btn-info py-1 text-light mt-2 px-4"
+              className="btn btn-info py-1 pb-2 text-light mt-2 px-4"
               download={'ahmed_sani_resume.pdf'}
               variants={buttonVariants}
               whileHover='hover'
               whileTap='tap'
+              style={{ fontSize: '0.56rem'}}
             >
               <i className='fas fa-download me-1'></i> Download resume
             </motion.a>
