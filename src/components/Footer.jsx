@@ -29,7 +29,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-social d-flex align-items-center">
-          <a href="https://www.linkedin.com/in/ahmed-sani-adamu-6275991b4?originalSubdomain=ng" target="_blank" rel="noopener noreferrer" className="footer-social-link mx-2" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/ahmed-s-adam-6275991b4/" target="_blank" rel="noopener noreferrer" className="footer-social-link mx-2" aria-label="LinkedIn">
             <span className="fab fa-linkedin fa-lg text-white"></span>
           </a>
           <a href="https://github.com/ahmedsaniadamu" target="_blank" rel="noopener noreferrer" className="footer-social-link mx-2" aria-label="GitHub">

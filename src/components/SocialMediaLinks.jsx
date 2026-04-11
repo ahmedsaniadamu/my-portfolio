@@ -1,25 +1,12 @@
-import React, { useState } from 'react';
 
-const tooltipText = "👋 Hi there! You can click any icon to easily contact Ahmed Sani.";
+import React from 'react';
 
 const SocialMediaLinks = ({ flexDirection, className }) => {
-  const [showTooltip, setShowTooltip] = useState(false);
-
   return (
     <div
       className={`${flexDirection} ${className} d-flex social-links-tooltip-wrapper`}
       style={{ marginTop: '-15px', position: 'relative' }}
-      onMouseEnter={() => setShowTooltip(true)}
-      onMouseLeave={() => setShowTooltip(false)}
-      tabIndex={0}
-      onFocus={() => setShowTooltip(true)}
-      onBlur={() => setShowTooltip(false)}
     >
-      {showTooltip && (
-        <div className="custom-social-tooltip">
-          {tooltipText}
-        </div>
-      )}
       <a
         href="https://web.facebook.com/profile.php?id=100023749763044"
         className="fab fa-facebook text-center m-0"
@@ -32,7 +19,7 @@ const SocialMediaLinks = ({ flexDirection, className }) => {
         target={'_blank'}
         aria-label="WhatsApp"
       >  </a>
-      <a href="https://www.linkedin.com/in/ahmed-sani-adamu-6275991b4?originalSubdomain=ng"
+      <a href="https://www.linkedin.com/in/ahmed-s-adam-6275991b4/"
         className="fab fa-linkedin text-center m-0"
         target={'_blank'}
         aria-label="LinkedIn"

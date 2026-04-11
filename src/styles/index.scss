@@ -1,3 +1,30 @@
+// Pagination custom styles for orange branding
+.pagination .page-link {
+    color: #f97316;
+    border: 1px solid #f9731622;
+    background: #18191b;
+    font-size: 0.7rem;
+    transition: background 0.2s, color 0.2s;
+}
+.pagination .page-link:hover,
+.pagination .page-link:focus {
+    background: #f97316;
+    color: #fff;
+    border-color: #f97316;
+}
+.pagination .page-item.active .page-link {
+    background: #f97316;
+    color: #fff;
+    border-color: #f97316;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(249, 115, 22, 0.12);
+}
+.pagination .page-item.disabled .page-link {
+    color: #aaa;
+    background: #222;
+    border-color: #f9731622;
+    cursor: not-allowed;
+}
 // Modal styles for contact form
 .modal-overlay {
     position: fixed;
@@ -265,26 +292,40 @@ nav.navbar-wrapper {
     }
 
     .social-links-tooltip-wrapper {
-        position: relative;
+        
     }
 
-    .custom-social-tooltip {
-        position: absolute;
-        left: 120%;
-        top: 0;
-        min-width: 180px;
-        background: #222;
-        color: #fff;
-        padding: 10px 16px;
-        border-radius: 8px;
-        font-size: 0.55rem;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-        z-index: 100;
-        white-space: pre-line;
-        pointer-events: none;
-        opacity: 0.97;
-        transition: opacity 0.2s;
-    }
+        .custom-social-tooltip {
+                position: fixed;
+                right: 60px;
+                top: 20%;
+                min-width: 200px;
+                background: #222;
+                color: #fff;
+                padding: 12px 18px;
+                border-radius: 8px;
+                font-size: 0.7rem;
+                box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+                z-index: 9999;
+                white-space: pre-line;
+                pointer-events: auto;
+                opacity: 0.97;
+                transition: opacity 0.2s;
+                display: block;
+        }
+
+        @media (max-width: 600px) {
+            .custom-social-tooltip {
+                position: fixed;
+                left: 50%;
+                top: 10%;
+                right: auto;
+                transform: translateX(-50%);
+                min-width: 70vw;
+                font-size: 0.85rem;
+                padding: 14px 10px;
+            }
+        }
 }
 
 header {
