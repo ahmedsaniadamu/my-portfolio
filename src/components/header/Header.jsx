@@ -135,7 +135,7 @@ const Header = () => {
             <motion.a
               href="assets/ahmed-resume.pdf"
               className="btn btn-info py-1 pb-2 text-light mt-2 px-4"
-              download={'ahmed_sani_resume.pdf'}
+              download={'ahmed-sani-resume.pdf'}
               variants={buttonVariants}
               whileHover='hover'
               whileTap='tap'

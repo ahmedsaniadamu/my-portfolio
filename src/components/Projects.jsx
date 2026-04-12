@@ -91,7 +91,7 @@ const Projects = () => {
                 </div>
 
                 <div className="card-body p-3 p-md-4 d-flex flex-column z-1 position-relative" style={{ marginTop: '-30px' }}>
-                  <h4 className='card-title fw-bold text-white text-capitalize mb-2 shadow-sm' style={{ fontSize: '0.75rem', letterSpacing: '0.5px' }}>
+                  <h4 className='card-title fw-bold text-white text-capitalize mb-1 shadow-sm' style={{ fontSize: '0.75rem', letterSpacing: '0.5px' }}>
                     {project.name}
                   </h4>
                   <p className='card-text mb-2 mt-0' style={{ color: 'rgba(255,255,255,0.6)', lineHeight: '1.6', flexGrow: 1, fontSize: '0.5rem' }}>
