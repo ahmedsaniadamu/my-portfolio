@@ -133,7 +133,7 @@ const Header = () => {
             variants={itemVariants}
           >
             <motion.a
-              href="assets/ahmed-resume.pdf"
+              href="assets/ahmed-sani-resume.pdf"
               className="btn btn-info py-1 pb-2 text-light mt-2 px-4"
               download={'ahmed-sani-resume.pdf'}
               variants={buttonVariants}
