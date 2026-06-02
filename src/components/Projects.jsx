@@ -31,7 +31,7 @@ const itemVariants = {
 
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 4;
+  const itemsPerPage = 6;
   const totalPages = Math.ceil(projects.length / itemsPerPage);
 
   const handlePageChange = (page) => {
@@ -54,9 +54,14 @@ const Projects = () => {
       >
         <motion.div variants={itemVariants} className="text-center mb-4">
           <h5 className="header fw-bold mb-1 text-white" style={{ fontSize: '1rem' }}>
-            <span className='text-info'>Explore</span> Some Of My Recent Projects 
+            <span className='text-info'>Explore</span> Some Of My Recent Projects
           </h5>
-          <p className="text-center text-muted-small" style={{ fontSize: '0.56rem', color: 'rgba(255,255,255,0.6)' }}>Here are a some public sites of projects I've worked on recently for various clients, showcasing my skills and experience.</p>
+          <p
+            className="text-center text-muted-small"
+            style={{ fontSize: '0.56rem', color: 'rgba(255,255,255,0.6)' }}
+          >
+            Explore some of the public projects I’ve built for clients, showcasing my development expertise and creativity.
+          </p>
           <div className="mx-auto bg-info" style={{ width: '40px', height: '2px', borderRadius: '2px' }}></div>
         </motion.div>
 

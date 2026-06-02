@@ -7,7 +7,7 @@ const Navbar = ({ className }) => {
 
   return (
     <div className={className}>
-      <div className='h-100 d-flex align-items-center justify-content-between'>
+      <div className='h-100 d-flex px-4 align-items-center justify-content-between'>
         <img style={{ borderRadius: '50%' }} src="assets/logo.jpg" alt="logo" className='logo ms-1 ps-1 pt-1' />
         <div className=' navigation-links'>
           <ul className='p-0 m-0 d-flex align-items-center me-3'>

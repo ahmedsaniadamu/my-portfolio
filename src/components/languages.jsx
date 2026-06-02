@@ -1,23 +1,23 @@
 const languages = [
     {
         id: 1,
-        language : 'HTML' ,
-        image : 'assets/IMG_20220218_163129.png' ,
-        description : ' A language used to define a structure of a web page ' 
+        language: 'HTML',
+        image: 'assets/IMG_20220218_163129.png',
+        description: ' A language used to define a structure of a web page '
 
     },
-     {
+    {
         id: 2,
-        language : 'CSS' ,
-        image : 'assets/IMG_20220218_163154.png' ,
-        description : ' A language for styling web pages ' 
+        language: 'CSS',
+        image: 'assets/IMG_20220218_163154.png',
+        description: ' A language for styling web pages '
 
     },
-     {
+    {
         id: 3,
-        language : 'JavaScript' ,
-        image : 'assets/IMG_20220218_163143.png' ,
-        description : ' A Programming language for manuplating web pages' 
+        language: 'JavaScript',
+        image: 'assets/IMG_20220218_163143.png',
+        description: ' A Programming language for manuplating web pages'
 
     },
     {
@@ -29,7 +29,7 @@ const languages = [
     },
     {
         id: 47,
-        language: 'next js',
+        language: '',
         image: 'assets/next.png',
         description: ' A Javacript Library for building user interface'
 
@@ -64,7 +64,7 @@ const languages = [
     },
     {
         id: 756,
-        language: 'cypress',
+        language: 'Cypress',
         image: 'assets/cypress.png',
         description: ' A Javacript Library for building user interface'
 
@@ -76,11 +76,11 @@ const languages = [
     //     description : ' A css framework for building faster and responsive website' 
 
     // },
-     {
+    {
         id: 5,
-        language : 'Sass' ,
-        image : 'assets/IMG_20220218_163642.png' ,
-        description : ' A css preprocessor that extends css functionalities' 
+        language: 'Sass',
+        image: 'assets/IMG_20220218_163642.png',
+        description: ' A css preprocessor that extends css functionalities'
 
     },
     //  {
@@ -90,12 +90,12 @@ const languages = [
     //     description : ' A javascript transpiler that translate javascript code to Es5' 
 
     // },
-    
-     {
+
+    {
         id: 8,
-        language : 'Git' ,
-        image : 'assets/IMG_20220218_163338.png' ,
-        description : 'Version Control System' 
+        language: 'Git',
+        image: 'assets/IMG_20220218_163338.png',
+        description: 'Version Control System'
 
     },
     //  {
@@ -126,10 +126,10 @@ const languages = [
     // },
     {
         id: 13,
-        language : '' ,
-        image : 'assets/tailwindcss.png' ,
-        description : 'A css framework for creating modern website layouts' 
-    },    
+        language: '',
+        image: 'assets/tailwindcss.png',
+        description: 'A css framework for creating modern website layouts'
+    },
 ]
 
 export default languages
